@@ -1,0 +1,180 @@
+/* =====================================================
+   DESIGN TOKENS (OFFICIAL, CALM, TRUST-ORIENTED)
+===================================================== */
+
+:root {
+  --bg-main: #f9fafb;
+  --bg-surface: #ffffff;
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+
+  --border-light: #e5e7eb;
+
+  --gov-blue: #203647;
+  --accent-blue: #1e40af;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+}
+
+/* =====================================================
+   RESET & BASE
+===================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--text-primary);
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+/* =====================================================
+   TOP GOVERNMENT BAR
+===================================================== */
+
+.gov-bar {
+  background: #111827;
+  color: #e5e7eb;
+  font-size: 12px;
+  padding: 6px 24px;
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.main-header {
+  background: var(--gov-blue);
+  color: white;
+  padding: 18px 24px;
+}
+
+.org-name {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.org-sub {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+/* =====================================================
+   MAIN LAYOUT
+===================================================== */
+
+.page-center {
+  min-height: calc(100vh - 160px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+/* =====================================================
+   ENTRY PANEL
+===================================================== */
+
+.entry-panel {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  width: 460px;
+  padding: 40px 36px;
+}
+
+/* =====================================================
+   TYPOGRAPHY
+===================================================== */
+
+.product-title {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+}
+
+.product-subtitle {
+  margin-top: 10px;
+  font-size: 15px;
+  color: var(--text-secondary);
+}
+
+/* =====================================================
+   FORM ELEMENTS
+===================================================== */
+
+.form-block {
+  margin-top: 30px;
+}
+
+.field-label {
+  font-size: 12px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.field-input {
+  width: 100%;
+  margin-top: 8px;
+  padding: 12px 14px;
+  font-size: 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+}
+
+.field-input:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+}
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.primary-btn {
+  width: 100%;
+  margin-top: 28px;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  background: var(--accent-blue);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  opacity: 0.95;
+}
+
+/* =====================================================
+   SECURITY NOTE
+===================================================== */
+
+.security-note {
+  margin-top: 24px;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.main-footer {
+  border-top: 1px solid var(--border-light);
+  text-align: center;
+  padding: 14px;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
